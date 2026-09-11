@@ -1,0 +1,40 @@
+import Logo from "../assets/logo-text.png";
+import Hamberger from "../assets/hamburger.png"
+import { useState } from "react";
+const NavBar = () => {
+    const [navBarbtn, setNavBarBtn] = useState<"signin" | "signup">("signup");
+
+    const handleNavBtn = (btnType:"signin" | "signup")=> {
+        setNavBarBtn(btnType);
+    }
+    console.log(navBarbtn)
+
+    return (
+        <nav className="py-5 border-b border-gray-200">
+            <section className="flex justify-between items-center max-w-[80%] mx-auto">
+                <div>
+                    <img src={Logo} alt="" className="hidden md:block md:w-30" />
+
+                    <img src={Hamberger}  alt="" className="block md:hidden"/>                    
+                </div>
+
+                <ul className="hidden md:flex gap-5">
+                    <li className="text-[#f53199] font-semibold">Home</li>
+                    <li className="font-light">Technologies</li>
+                    <li className="font-light">Projects</li>
+                    <li className="font-light">About</li>
+                    <li className="font-light">Contact</li>
+                </ul>
+
+                <div className="flex gap-5 items-center ">
+                    <button className={`btn ${navBarbtn === "signin"? "btn-secondary": ""}`} onClick={()=>handleNavBtn("signin")}>Sign In</button>
+
+                    <button className={`btn ${navBarbtn === "signup"? "btn-secondary": ""}`} onClick={()=>handleNavBtn("signup")}>Sign Up</button>
+                </div>
+
+            </section>
+        </nav>
+    );
+};
+
+export default NavBar;
