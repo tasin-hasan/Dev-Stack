@@ -7,7 +7,7 @@ const NavBar = () => {
     const handleNavBtn = (btnType:"signin" | "signup")=> {
         setNavBarBtn(btnType);
     }
-    console.log(navBarbtn)
+    // console.log(navBarbtn)
 
     return (
         <nav className="py-5 border-b border-gray-200">
