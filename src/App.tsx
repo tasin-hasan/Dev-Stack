@@ -1,5 +1,8 @@
+import { Suspense } from "react"
 import Banner from "./components/Banner"
 import NavBar from "./components/NavBar"
+import Technology from "./components/Technologies/Technology"
+import Footer from "./components/Footer"
 
 function App() {
   
@@ -11,7 +14,12 @@ function App() {
 
       <Banner></Banner>
 
-      
+      <Suspense>
+        <Technology></Technology>
+      </Suspense>
+
+      <Footer></Footer>
+
     </>
   )
 }
