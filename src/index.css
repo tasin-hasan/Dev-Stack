@@ -7,6 +7,10 @@
   --primary-gradient: linear-gradient(90deg, #f53199, #7c3aed);
 }
 
+.text {
+  color: #f53199;
+}
+
 .gradient-text {
   background: var(--primary-gradient);
   background-clip: text;
