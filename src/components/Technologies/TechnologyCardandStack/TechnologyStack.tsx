@@ -49,6 +49,7 @@ const TechnologyStack = ({
               data={data}
               stackData={stackData}
               setStackData={setStackData}
+              key={data.id}
             ></StackData>
           ))}
         </div>

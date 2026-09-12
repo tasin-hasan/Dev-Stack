@@ -25,7 +25,7 @@ const TechnologySection = ({ techPromiseData }: ItechnologySectionProps) => {
       <p className="font-light text-center mb-8 md:mb-10 md:text-start">Pick one technology to build your ideal stack.</p>
 
       {/* technology-cards and your-stack section  */}
-      <div className="flex gap-3.5">
+      <div className="flex flex-col gap-3.5 items-center lg:flex-row lg:items-start">
         {/* cards div  */}
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 
