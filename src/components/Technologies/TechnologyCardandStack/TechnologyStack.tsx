@@ -39,9 +39,15 @@ const TechnologyStack = ({
         <h2 className="card-title">Your Stack</h2>
         <p>
           {totalElement === 0
-            ? "Your stack is empty"
-            : `${totalElement} technology is selected.`}
+            ? "No technology selected yet"
+            : `${totalElement} technology selected.`}
         </p>
+
+
+        <div className={`border border-dotted border-gray-300 rounded-lg py-4 text-center text-gray-400 text-[0.80rem] ${totalElement === 0? "visible" : "hidden"}`}>
+          <p>Your stack is empty</p>
+        </div>
+        
 
         <div>
           {stackData.map((data) => (
@@ -55,7 +61,7 @@ const TechnologyStack = ({
         </div>
 
         <button
-          className="btn btn-outline btn-secondary"
+          className={`btn btn-outline btn-secondary ${totalElement > 0? "visible" : "hidden"}`}
           onClick={handleOnclick}
         >
           Remove All

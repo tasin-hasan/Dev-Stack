@@ -16,10 +16,10 @@ const Banner = () => {
           side by side, and put together the stack that fits your next project.
         </p>
 
-        <div className="flex gap-5">
-            <button className="btn gradient-bg font-light text-white px-4">Explore Technologies</button>
+        <div className="flex flex-col gap-5 md:flex-row">
+            <button className="btn gradient-bg font-semibold text-white px-4">Explore Technologies</button>
 
-            <button className="btn font-light text-gray-600 px-10">Learn More</button>
+            <button className="btn font-semibold text-gray-600 px-10">Learn More</button>
         </div>
       </div>
 

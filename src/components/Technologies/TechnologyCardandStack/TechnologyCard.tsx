@@ -4,7 +4,6 @@ import { type Dispatch, type SetStateAction } from "react";
 import { Flip, toast } from "react-toastify";
 import { FaCheck } from "react-icons/fa";
 
-
 interface ItechnologyCardProps {
   singleData: IDataType;
   stackData: IDataType[];
@@ -38,7 +37,7 @@ const TechnologyCard = ({
     });
   };
 
-  console.log(stackData);
+  // console.log(stackData);
 
   return (
     <div
@@ -57,11 +56,11 @@ const TechnologyCard = ({
 
         <p>{singleData.description}</p>
 
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap justify-between items-center gap-2">
           <div className="badge badge-ghost">{singleData.category}</div>
 
-          <div className="badge">{singleData.difficulty}</div>
-          <div className="badge">
+          <div className="inline-block">{singleData.difficulty}</div>
+          <div className="flex items-center gap-1">
             <IoIosStar className="text-yellow-500" />
             <span>{singleData.rating}</span>
           </div>
