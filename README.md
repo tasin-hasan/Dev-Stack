@@ -7,7 +7,7 @@ DevStack is a web project where developers can select any technology to build a 
 ## 🖼️ Project Preview
 
 - Project Live link: https://dev-stack-ten-delta.vercel.app/
-- GitHub Repository Link: 
+- GitHub Repository Link: https://github.com/tasin-hasan/Dev-Stack
 
 ---
 
