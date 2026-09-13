@@ -37,7 +37,7 @@ const TechnologyCard = ({
     });
   };
 
-  // console.log(stackData);
+  
 
   return (
     <div
