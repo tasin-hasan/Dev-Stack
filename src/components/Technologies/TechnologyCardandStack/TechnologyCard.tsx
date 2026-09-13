@@ -37,7 +37,21 @@ const TechnologyCard = ({
     });
   };
 
-  
+  const showDuplicateToast = () => {
+    if (enableOrDisableBtn) {
+      toast.warn("The card is already added", {
+        position: "bottom-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Flip,
+      });
+    }
+  };
 
   return (
     <div
@@ -66,7 +80,7 @@ const TechnologyCard = ({
           </div>
         </div>
 
-        <div className=" card-actions">
+        <div className=" card-actions" onClick={showDuplicateToast}>
           <button
             onClick={handleSetStackData}
             className={`btn btn-primary btn-block   ${enableOrDisableBtn ? "bg-[#f5e8ee]" : "bg-black"}  ${enableOrDisableBtn ? "text" : "text-white"}`}

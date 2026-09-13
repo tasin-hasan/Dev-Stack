@@ -6,7 +6,7 @@
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/React.svg",
     "rating": 4.9,
-    "difficulty": "Beginner",
+    "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
   {
@@ -26,7 +26,7 @@
     "description": "A versatile programming language used to create interactive and dynamic web applications.",
     "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
     "rating": 4.9,
-    "difficulty": "Beginner",
+    "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },
   {
@@ -76,7 +76,7 @@
     "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
     "icon": "https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg",
     "rating": 4.8,
-    "difficulty": "Beginner",
+    "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
   {
@@ -96,7 +96,7 @@
     "description": "A beginner-friendly and powerful programming language used for web development, automation, and AI.",
     "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
-    "difficulty": "Beginner",
+    "difficulty": "Advanced",
     "badge": "Versatile"
   },
   {
@@ -116,7 +116,7 @@
     "description": "A distributed version control system used to track changes and collaborate on software projects.",
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
-    "difficulty": "Beginner",
+    "difficulty": "Intermediate",
     "badge": "Essential"
   }
 ]
